@@ -1,2 +1,3 @@
-# mkumar.github.io
-Personal repository for blogging 
+# Manish Kumar's Blogs
+
+Personal repository for blogging.

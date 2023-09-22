@@ -1,0 +1,25 @@
+baseURL = "https://mkumar73.github.io/"
+languageCode = "en-us"
+title = "Manish Kumar"
+theme = "yinyang"
+enableRobotsTXT = true
+pygmentsUseClasses = true
+
+[author]
+email = "manishkr7003@gmail.com"
+name = "Manish Kumar"
+
+[params]
+headTitle = "Manish Kumar"
+mainSections = ["blogs"]
+favicon = "/img/favicon.ico"
+# images = ["/img/beach.jpg"]
+description = "Manish Kumar's blog ツ"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5

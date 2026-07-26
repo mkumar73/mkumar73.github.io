@@ -178,7 +178,7 @@ export default function Home() {
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
         </nav>
-        <a className="contact-link" href="mailto:manish.kumar@basf.com">
+        <a className="contact-link" href="mailto:manishkr7003@gmail.com">
           Contact <Arrow />
         </a>
       </header>
@@ -380,7 +380,7 @@ export default function Home() {
             <a href={scholarUrl} target="_blank" rel="noreferrer">
               Google Scholar <Arrow diagonal />
             </a>
-            <a href="mailto:manish.kumar@basf.com">
+            <a href="mailto:manishkr7003@gmail.com">
               Email <Arrow diagonal />
             </a>
           </div>

@@ -1306,3 +1306,198 @@ footer > a {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Expandable open-source projects */
+.project-card {
+  display: block;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.project-card summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.project-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-card summary:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: -2px;
+  border-radius: 6px;
+}
+
+.project-card summary > p {
+  max-width: 570px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+.project-card[open] {
+  border-color: var(--cyan-dark);
+}
+
+.project-card[open] .closed-label {
+  display: none;
+}
+
+.project-card[open] .open-label {
+  display: inline;
+}
+
+.project-card[open] .expand-symbol {
+  transform: rotate(45deg);
+}
+
+.project-details {
+  margin-top: 28px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+  color: #b3c0c3;
+  line-height: 1.72;
+  animation: revealDetails 220ms ease both;
+}
+
+.project-details > p {
+  margin: 0 0 18px;
+}
+
+.project-details ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.project-details > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 24px;
+  color: var(--lime);
+  font-size: 13px;
+}
+
+/* Contact form */
+.contact-section {
+  padding: 122px 0;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(480px, 1.15fr);
+  gap: 9vw;
+}
+
+.contact-copy h2 {
+  margin: 20px 0 22px;
+  max-width: 620px;
+  font: 500 clamp(40px, 4.5vw, 66px)/1.07 "Space Grotesk", sans-serif;
+  letter-spacing: -0.045em;
+}
+
+.contact-copy > p {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.contact-direct {
+  margin-top: 38px;
+  display: grid;
+  gap: 8px;
+}
+
+.contact-direct span,
+.contact-form label {
+  color: var(--cyan);
+  font: 500 10px/1 "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contact-direct a {
+  color: var(--lime);
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px 18px;
+  padding: 34px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-soft);
+}
+
+.contact-form label {
+  align-self: end;
+  margin-top: 8px;
+}
+
+.contact-form label[for="contact-subject"],
+.contact-form label[for="contact-message"],
+.contact-form #contact-subject,
+.contact-form #contact-message,
+.contact-form button {
+  grid-column: 1 / -1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  color: var(--text);
+  background: #091014;
+  border: 1px solid var(--border-bright);
+  border-radius: 7px;
+  padding: 14px 15px;
+  font: 400 15px/1.5 "IBM Plex Sans", sans-serif;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(53, 230, 209, 0.08);
+}
+
+.contact-form button {
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 82px 0;
+  }
+
+  .contact-copy h2 {
+    font-size: 43px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+    padding: 26px 22px;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    grid-column: 1;
+  }
+}

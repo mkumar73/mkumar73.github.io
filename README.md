@@ -1,4 +1,4 @@
-# Manish Kumar — Research Profile
+# Manish Kumar - Profile Page
 
 Research-focused personal website for Manish Kumar, covering tabular deep
 learning, numerical feature representations, splines, agentic AI, publications,

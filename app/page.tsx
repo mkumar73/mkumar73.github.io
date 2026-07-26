@@ -185,14 +185,15 @@ export default function Home() {
 
       <section className="hero section-shell" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">AI Researcher · PhD Candidate</p>
+          <p className="eyebrow">Research Scientist · AI Lead</p>
           <h1>
             Researching how machines learn from{" "}
             <span>structured data.</span>
           </h1>
           <p className="hero-intro">
             I work on tabular deep learning, numerical feature
-            representations and splines, and reliable agentic AI systems.
+            representations and splines, LLM applications, multi-agent
+            systems, and production ML platforms.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href={githubUrl} target="_blank" rel="noreferrer">
@@ -360,10 +361,10 @@ export default function Home() {
               <span className="industrial-index">01</span>
               <div>
                 <p className="industrial-domain">Document intelligence · GenAI</p>
-                <h3>Multilingual Purchase Order Extraction</h3>
+                <h3>Enterprise Document Extraction</h3>
                 <p>
-                  Architecture of a production AI service that turns complex,
-                  multilingual business documents into reliable structured data.
+                  An LLM-powered OCR platform that extracts business documents,
+                  maps required SAP data, and supports order submission.
                 </p>
               </div>
               <span className="expand-symbol">+</span>
@@ -371,7 +372,7 @@ export default function Home() {
             <div className="industrial-details">
               <ul>
                 <li>OCR, document understanding, and structured LLM extraction</li>
-                <li>Similarity-based retrieval and human-feedback workflows</li>
+                <li>SAP data mapping and validation across document types</li>
                 <li>Asynchronous processing, observability, and scalable deployment</li>
               </ul>
               <div className="tool-stack">
@@ -386,24 +387,24 @@ export default function Home() {
             <summary>
               <span className="industrial-index">02</span>
               <div>
-                <p className="industrial-domain">Forecasting · AutoML</p>
-                <h3>Commodity Price Forecasting</h3>
+                <p className="industrial-domain">Multi-agent systems · Enterprise AI</p>
+                <h3>Enterprise Multi-Agent Assistant</h3>
                 <p>
-                  Machine-learning and deep-learning systems for industrial
-                  price forecasting, developed from modelling through production use.
+                  A multi-agent assistant integrated with web portals,
+                  Microsoft Teams, Salesforce, and internal enterprise services.
                 </p>
               </div>
               <span className="expand-symbol">+</span>
             </summary>
             <div className="industrial-details">
               <ul>
-                <li>Time-series modelling and domain-informed feature engineering</li>
-                <li>Automated model selection, validation, and evaluation</li>
-                <li>Cloud deployment and integration with end-user workflows</li>
+                <li>Connects agents, tools, and services owned by different teams</li>
+                <li>Supports product, order, and customer-service workflows</li>
+                <li>Retrieves product data and documents and performs authorized actions</li>
               </ul>
               <div className="tool-stack">
-                <span>Python</span><span>Deep Learning</span><span>AutoML</span>
-                <span>Time Series</span><span>Microsoft Azure</span><span>MLOps</span>
+                <span>LLMs</span><span>Multi-Agent Systems</span><span>Microsoft Teams</span>
+                <span>Salesforce</span><span>Enterprise APIs</span><span>Access Control</span>
               </div>
             </div>
           </details>
@@ -491,7 +492,13 @@ export default function Home() {
         </div>
         <div className="timeline">
           <article className="timeline-item current">
-            <p className="timeline-date">Jun 2025 — Present</p>
+            <p className="timeline-date">Jul 2026 — Present</p>
+            <h3>AI Lead</h3>
+            <p className="timeline-place">BASF · Ludwigshafen, Germany</p>
+            <p>Leading AI development for enterprise document intelligence and multi-agent solutions connected to real business workflows.</p>
+          </article>
+          <article className="timeline-item">
+            <p className="timeline-date">Jun 2025 — Jul 2026</p>
             <h3>Principal Data Scientist</h3>
             <p className="timeline-place">BASF · Ludwigshafen, Germany</p>
             <p>Solution architecture for multilingual GenAI extraction systems, with a focus on reliable LLM workflows and production AI.</p>
@@ -542,7 +549,7 @@ export default function Home() {
         </div>
         <div className="about-copy">
           <p>
-            I am an AI researcher and data scientist at BASF and a PhD candidate
+            I am a Research Scientist and AI Lead at BASF and a PhD candidate
             at Clausthal University of Technology. My work sits at the
             intersection of machine learning methodology, open-source research
             software, and production AI.
@@ -571,7 +578,7 @@ export default function Home() {
           <span className="brand-mark">MK</span>
           <span>Manish Kumar</span>
         </div>
-        <p>AI research · Tabular deep learning · Agentic systems</p>
+        <p>Research scientist · AI lead · Tabular deep learning · Agentic systems</p>
         <a href="#top">Back to top ↑</a>
       </footer>
     </main>

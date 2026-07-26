@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Manish Kumar | AI Researcher",
+  title: "Manish Kumar | Research Scientist & AI Lead",
   description:
-    "Research profile of Manish Kumar — tabular deep learning, numerical feature representations, splines, and agentic AI.",
+    "Research Scientist and AI Lead focused on tabular deep learning, LLM applications, multi-agent systems, and production ML platforms.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

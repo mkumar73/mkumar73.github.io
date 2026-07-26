@@ -175,8 +175,8 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
+          <a href="#applied-ai">Applied AI</a>
+          <a href="#journey">Journey</a>
         </nav>
         <a className="contact-link" href="mailto:manishkr7003@gmail.com">
           Contact <Arrow />
@@ -257,57 +257,182 @@ export default function Home() {
           </a>
         </div>
         <div className="publication-list">
-          <article className="publication-card featured">
-            <div className="publication-meta">
-              <span>2026</span>
-              <span>Tabular deep learning</span>
+          <details className="publication-card featured">
+            <summary>
+              <div className="publication-meta">
+                <span>2026</span>
+                <span>Tabular deep learning</span>
+              </div>
+              <h3>
+                From Uniform to Learned Knots: A Study of Spline-Based Numerical
+                Encodings for Tabular Deep Learning
+              </h3>
+              <p>
+                A systematic study of B-, M-, and I-spline encodings with
+                uniform, quantile-based, target-aware, and learnable knot
+                placement.
+              </p>
+              <p className="authors">
+                Manish Kumar, Anton Frederik Thielmann, Christoph Weisser,
+                Benjamin Säfken
+              </p>
+              <span className="expand-label">
+                <span className="closed-label">View abstract</span>
+                <span className="open-label">Hide abstract</span>
+                <span className="expand-symbol">+</span>
+              </span>
+            </summary>
+            <div className="publication-details">
+              <p className="detail-label">Abstract</p>
+              <p>
+                Numerical feature representation is a central design choice in
+                tabular deep learning. This work systematically compares
+                spline-based representations across spline families, knot
+                placement strategies, representation sizes, and neural
+                backbones. The study examines uniform, quantile-based,
+                target-aware, and gradient-learned knots across classification
+                and regression tasks, and derives practical guidance for
+                choosing expressive yet efficient numerical encodings.
+              </p>
+              <div className="detail-topics">
+                <span>B-splines</span><span>I-splines</span>
+                <span>Learnable knots</span><span>PLE</span>
+              </div>
+              <a href="https://arxiv.org/abs/2604.05635" target="_blank" rel="noreferrer">
+                Read on arXiv <Arrow diagonal />
+              </a>
             </div>
-            <h3>
-              From Uniform to Learned Knots: A Study of Spline-Based Numerical
-              Encodings for Tabular Deep Learning
-            </h3>
-            <p>
-              A systematic study of B-, M-, and I-spline encodings with
-              uniform, quantile-based, target-aware, and learnable knot
-              placement.
-            </p>
-            <p className="authors">
-              Manish Kumar, Anton Frederik Thielmann, Christoph Weisser,
-              Benjamin Säfken
-            </p>
-            <a
-              href="https://arxiv.org/abs/2604.05635"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Read From Uniform to Learned Knots on arXiv"
-            >
-              Read paper <Arrow diagonal />
-            </a>
-          </article>
+          </details>
 
-          <article className="publication-card">
-            <div className="publication-meta">
-              <span>2024</span>
-              <span>State-space models</span>
+          <details className="publication-card">
+            <summary>
+              <div className="publication-meta">
+                <span>2024</span>
+                <span>State-space models</span>
+              </div>
+              <h3>Mambular: A Sequential Model for Tabular Deep Learning</h3>
+              <p>
+                An adaptation of the Mamba architecture for regression,
+                classification, and distributional regression on tabular data.
+              </p>
+              <p className="authors">
+                Anton Frederik Thielmann, Manish Kumar, Christoph Weisser, Arik
+                Reuter, Benjamin Säfken, Soheila Samiee
+              </p>
+              <span className="expand-label">
+                <span className="closed-label">View abstract</span>
+                <span className="open-label">Hide abstract</span>
+                <span className="expand-symbol">+</span>
+              </span>
+            </summary>
+            <div className="publication-details">
+              <p className="detail-label">Abstract</p>
+              <p>
+                Mambular adapts selective state-space models to tabular data.
+                It provides a flexible framework for classification,
+                regression, and distributional regression while exploring how
+                sequential modelling can capture interactions among structured
+                features.
+              </p>
+              <div className="detail-topics">
+                <span>Mamba</span><span>State-space models</span>
+                <span>Distributional regression</span>
+              </div>
+              <a href="https://arxiv.org/abs/2408.06291" target="_blank" rel="noreferrer">
+                Read on arXiv <Arrow diagonal />
+              </a>
             </div>
-            <h3>Mambular: A Sequential Model for Tabular Deep Learning</h3>
-            <p>
-              An adaptation of the Mamba architecture for regression,
-              classification, and distributional regression on tabular data.
-            </p>
-            <p className="authors">
-              Anton Frederik Thielmann, Manish Kumar, Christoph Weisser, Arik
-              Reuter, Benjamin Säfken, Soheila Samiee
-            </p>
-            <a
-              href="https://arxiv.org/abs/2408.06291"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Read Mambular on arXiv"
-            >
-              Read paper <Arrow diagonal />
-            </a>
-          </article>
+          </details>
+        </div>
+      </section>
+
+      <section className="content-section applied-ai section-shell" id="applied-ai">
+        <div className="section-heading">
+          <p className="section-kicker">Applied AI systems</p>
+          <h2>Research thinking, deployed at scale.</h2>
+          <p className="section-note">
+            Selected industrial work described at a public, architecture-focused level.
+          </p>
+        </div>
+        <div className="industrial-grid">
+          <details className="industrial-card">
+            <summary>
+              <span className="industrial-index">01</span>
+              <div>
+                <p className="industrial-domain">Document intelligence · GenAI</p>
+                <h3>Multilingual Purchase Order Extraction</h3>
+                <p>
+                  Architecture of a production AI service that turns complex,
+                  multilingual business documents into reliable structured data.
+                </p>
+              </div>
+              <span className="expand-symbol">+</span>
+            </summary>
+            <div className="industrial-details">
+              <ul>
+                <li>OCR, document understanding, and structured LLM extraction</li>
+                <li>Similarity-based retrieval and human-feedback workflows</li>
+                <li>Asynchronous processing, observability, and scalable deployment</li>
+              </ul>
+              <div className="tool-stack">
+                <span>Azure OpenAI</span><span>Document Intelligence</span>
+                <span>FastAPI</span><span>MongoDB</span><span>RabbitMQ</span>
+                <span>Celery</span><span>MLflow</span><span>Kubernetes</span>
+              </div>
+            </div>
+          </details>
+
+          <details className="industrial-card">
+            <summary>
+              <span className="industrial-index">02</span>
+              <div>
+                <p className="industrial-domain">Forecasting · AutoML</p>
+                <h3>Commodity Price Forecasting</h3>
+                <p>
+                  Machine-learning and deep-learning systems for industrial
+                  price forecasting, developed from modelling through production use.
+                </p>
+              </div>
+              <span className="expand-symbol">+</span>
+            </summary>
+            <div className="industrial-details">
+              <ul>
+                <li>Time-series modelling and domain-informed feature engineering</li>
+                <li>Automated model selection, validation, and evaluation</li>
+                <li>Cloud deployment and integration with end-user workflows</li>
+              </ul>
+              <div className="tool-stack">
+                <span>Python</span><span>Deep Learning</span><span>AutoML</span>
+                <span>Time Series</span><span>Microsoft Azure</span><span>MLOps</span>
+              </div>
+            </div>
+          </details>
+
+          <details className="industrial-card">
+            <summary>
+              <span className="industrial-index">03</span>
+              <div>
+                <p className="industrial-domain">Predictive analytics · Healthcare</p>
+                <h3>Healthcare Claims Analytics</h3>
+                <p>
+                  Predictive modelling and analytics infrastructure for
+                  understanding and managing healthcare-claim denials.
+                </p>
+              </div>
+              <span className="expand-symbol">+</span>
+            </summary>
+            <div className="industrial-details">
+              <ul>
+                <li>Machine-learning models for claim-denial prediction</li>
+                <li>Large-scale data processing and analytical workflows</li>
+                <li>Integrated analytics and visualization platform</li>
+              </ul>
+              <div className="tool-stack">
+                <span>Machine Learning</span><span>Big Data</span>
+                <span>Predictive Analytics</span><span>Visualization</span>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
@@ -352,6 +477,60 @@ export default function Home() {
             <a href="https://github.com/OpenTabular/PreTab" target="_blank" rel="noreferrer">
               Explore repository <Arrow diagonal />
             </a>
+          </article>
+        </div>
+      </section>
+
+      <section className="content-section journey section-shell" id="journey">
+        <div className="section-heading">
+          <p className="section-kicker">Career &amp; research journey</p>
+          <h2>From data systems to research-led AI.</h2>
+          <p className="section-note">
+            A professional track paired with an ongoing academic research track.
+          </p>
+        </div>
+        <div className="timeline">
+          <article className="timeline-item current">
+            <p className="timeline-date">Jun 2025 — Present</p>
+            <h3>Principal Data Scientist</h3>
+            <p className="timeline-place">BASF · Ludwigshafen, Germany</p>
+            <p>Solution architecture for multilingual GenAI extraction systems, with a focus on reliable LLM workflows and production AI.</p>
+          </article>
+          <article className="timeline-item research-track">
+            <p className="timeline-date">Oct 2023 — Present</p>
+            <h3>PhD Researcher in Artificial Intelligence</h3>
+            <p className="timeline-place">TU Clausthal · Parallel research track</p>
+            <p>Tabular deep learning, numerical feature representations, spline-based methods, and time-series forecasting.</p>
+          </article>
+          <article className="timeline-item">
+            <p className="timeline-date">Oct 2020 — Jun 2025</p>
+            <h3>Senior Data Scientist</h3>
+            <p className="timeline-place">BASF · Ludwigshafen, Germany</p>
+            <p>Production AI systems spanning forecasting, deep learning, AutoML, MLOps, and AI product development.</p>
+          </article>
+          <article className="timeline-item education">
+            <p className="timeline-date">2017 — 2019</p>
+            <h3>M.Sc. Cognitive Science</h3>
+            <p className="timeline-place">Universität Osnabrück · Grade 1.3</p>
+            <p>Specialization in Artificial Intelligence and Neuroinformatics.</p>
+          </article>
+          <article className="timeline-item">
+            <p className="timeline-date">Mar — Jun 2019</p>
+            <h3>Data Scientist Intern</h3>
+            <p className="timeline-place">BASF · Ludwigshafen, Germany</p>
+            <p>Commodity-price forecasting models deployed on Microsoft Azure.</p>
+          </article>
+          <article className="timeline-item">
+            <p className="timeline-date">Sep 2015 — Sep 2017</p>
+            <h3>Consultant → Data Scientist</h3>
+            <p className="timeline-place">KPMG India · Bengaluru, India</p>
+            <p>Machine learning for credit risk, résumé scoring, healthcare claims, and large-scale analytics.</p>
+          </article>
+          <article className="timeline-item">
+            <p className="timeline-date">Jul 2011 — Sep 2015</p>
+            <h3>Associate → Senior Software Engineer</h3>
+            <p className="timeline-place">Accenture · Bengaluru, India</p>
+            <p>Forecasting, customer analytics, industrial sensor processing, data warehousing, and ETL systems.</p>
           </article>
         </div>
       </section>
